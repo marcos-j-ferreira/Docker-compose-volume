@@ -1,0 +1,10 @@
+version:  "3.9"
+
+services:
+  flaskapp:
+    build:  .
+    container_name: flask02-volume
+    ports:
+      - "5000:5000"
+    volumes: 
+      - ./data:/app/data
